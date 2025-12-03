@@ -73,7 +73,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     <?php endif; ?>
 
-    <form method="POST" action="<?php echo $_SERVER['PHP_SELF']; ?>" class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4">
+    <form method="POST" action="index.php?page=contact" class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4">
         <input type="text" name="nom" placeholder="Votre nom" class="w-full border px-4 py-2 rounded-lg"
                value="<?php echo htmlspecialchars($nom); ?>">
         <input type="email" name="email" placeholder="Votre email" class="w-full border px-4 py-2 rounded-lg"
