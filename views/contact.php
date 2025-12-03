@@ -25,7 +25,7 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 
     if (empty($nom)) {
         $errors[] = "Le nom ne doit pas etre vide";
-    } elseif (!preg_match("/^[a-zA-ZÀ-ÿ\s'-]+$/", $nom)) {
+    } elseif (!preg_match("/^[a-zA-Z\s'-]+$/", $nom)) {
         $errors[] = "Le nom doit contenir just des lettres";
     }
 

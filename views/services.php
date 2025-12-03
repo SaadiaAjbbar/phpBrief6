@@ -23,6 +23,18 @@
     [
       "titre" => "Automatisation & API",
       "description" => "Automatisation des tâches, intégration d'API."
+    ],
+    [
+      "titre" => "Création de sites Web",
+      "description" => "Sites vitrines, e-commerce, applications modernes."
+    ],
+    [
+      "titre" => "Développement sur mesure",
+      "description" => "Outils internes, solutions métiers spécifiques."
+    ],
+    [
+      "titre" => "Automatisation & API",
+      "description" => "Automatisation des tâches, intégration d'API."
     ]
   ];
   ?>
