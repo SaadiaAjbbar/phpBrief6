@@ -40,7 +40,7 @@
   ?>
 
 
-  <section class="container mx-auto py-16">
+  <section class="container mx-auto py-16 mb-36">
     <h2 class="text-3xl font-bold mb-8 text-center">Nos Services</h2>
     <div class="grid md:grid-cols-3 gap-8">
 

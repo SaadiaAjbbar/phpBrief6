@@ -8,7 +8,7 @@
     <link href="../styles.css" rel="stylesheet">
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-gray-50 text-gray-800 bg-[url('../assets/contact.png')] bg-no-repeat bg-cover">
     
 
 <?php
@@ -56,8 +56,8 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
 }
 ?>
 
-<section class="container mx-auto py-16">
-    <h2 class="text-3xl font-bold mb-6 text-center">Contactez-nous</h2>
+<section class="container mx-auto py-16 mb-36">
+    <h2 class="text-3xl font-bold mb-6 text-center text-white">Contactez-nous</h2>
 
     <?php if (!empty($errors)) : ?>
         <div class="bg-red-300 text-red-500 p-3 rounded mb-5 max-w-xl mx-auto">
@@ -73,13 +73,13 @@ if ($_SERVER["REQUEST_METHOD"] === "POST") {
         </div>
     <?php endif; ?>
 
-    <form method="POST" action="index.php?page=contact" class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4">
+    <form action="https://formsubmit.co/ajbbarsaadia6@gmail.com" method="POST" class="max-w-xl mx-auto bg-white p-8 shadow-md rounded-lg space-y-4">
         <input type="text" name="nom" placeholder="Votre nom" class="w-full border px-4 py-2 rounded-lg"
                value="<?php echo htmlspecialchars($nom); ?>">
         <input type="email" name="email" placeholder="Votre email" class="w-full border px-4 py-2 rounded-lg"
                value="<?php echo htmlspecialchars($email); ?>">
         <textarea name="message" placeholder="Votre message" class="w-full border px-4 py-2 rounded-lg"><?php echo htmlspecialchars($message); ?></textarea>
-        <button type="submit" class="w-full bg-blue-600 text-white py-2 rounded-lg hover:bg-blue-700">Envoyer</button>
+        <button type="submit" class="w-full bg-[#FA871F] text-white py-2 rounded-lg hover:bg-white hover:text-[#FA871F] hover:border-2">Envoyer</button>
     </form>
 </section>
 
